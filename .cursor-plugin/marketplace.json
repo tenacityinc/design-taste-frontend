@@ -3,6 +3,10 @@
   "owner": {
     "name": "Tenacity Inc"
   },
+  "metadata": {
+    "description": "Anti-slop frontend design for landing pages, portfolios, and redesigns.",
+    "version": "0.2.0"
+  },
   "plugins": [
     {
       "name": "design-taste-frontend",
