@@ -55,15 +55,15 @@ Then push to `main`. Claude Code consumers run `/plugin update design-taste-fron
 
 ## Evals
 
-Five cases live in `plugins/design-taste-frontend/evals/` (the default eval directory for `claude plugin eval`). Four are positive design cases ported from upstream (`saas-invoicing`, `restaurant-osteria`, `portfolio-designer`, `product-ceramics`), each graded by an LLM on the house rules and on whether the idea comes from the subject. One is a negative case (`out-of-scope-caption-dashboard`): an HCB Desktop caption overlay plus a data dashboard, where the skill must decline to apply landing-page styling. Cases use only Read, Glob, Grep and Skill; there are no scaffold scripts, MCP servers or Bash.
+Five cases live in `plugins/design-taste-frontend/evals/` (the default eval directory for `claude plugin eval`). Four are positive design cases ported from upstream (`saas-invoicing`, `restaurant-osteria`, `portfolio-designer`, `product-ceramics`), each graded by an LLM on a handful of single-rule graders (one observable rule each, such as no placeholder imagery or a designed footer, so a failure names the rule) and on whether the idea comes from the subject. One is a negative case (`out-of-scope-caption-dashboard`): an HCB Desktop caption overlay plus a data dashboard, where the skill must decline to apply landing-page styling. Cases use only Read, Glob, Grep and Skill; there are no scaffold scripts, MCP servers or Bash.
 
-Running them calls the model on your account and costs money, so set a ceiling:
+Each case runs once, with and without the plugin, about 10 sessions in all and about $2.50. It calls the model on your account and costs money, so set a ceiling:
 
 ```
-claude plugin eval plugins/design-taste-frontend --max-cost-usd 2
+claude plugin eval plugins/design-taste-frontend --max-cost-usd 3
 ```
 
-Add `--runs 1` for a cheaper smoke run, or `--case 'out-of-scope*'` to run one case.
+Use `--runs 3` for a steadier read, or `--case 'out-of-scope*'` to run one case.
 
 ## Credits
 
