@@ -52,3 +52,7 @@ Bump `version` in:
 - `plugins/design-taste-frontend/.cursor-plugin/plugin.json`
 
 Then push to `main`. Claude Code consumers run `/plugin update design-taste-frontend@design-taste-frontend` (or `/reload-plugins`). Cursor consumers reload the window after the plugin updates.
+
+## Credits
+
+Based on [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) (MIT, copyright (c) 2026 Leonxlnx). Modified by Tenacity. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for the full license text and the commit this was copied from.
