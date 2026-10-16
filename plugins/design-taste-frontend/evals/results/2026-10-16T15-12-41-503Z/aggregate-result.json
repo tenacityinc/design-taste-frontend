@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "claudeVersion": "2.1.300",
+  "startedAt": "2026-10-16T15:12:41.503Z",
+  "durationSeconds": 0,
+  "costUsd": 0,
+  "partial": true,
+  "partialReason": "cost_ceiling",
+  "suite": {
+    "root": "/private/tmp/claude-501/-Users-dustin-Projects-HCB-Companion/87de2116-0bce-4952-8b71-023ab244373b/scratchpad/taste-work/plugins/design-taste-frontend",
+    "ablation": "none",
+    "caseFilter": "out-of-scope*",
+    "threshold": 1,
+    "concurrency": 1,
+    "plugins": [
+      {
+        "name": "design-taste-frontend",
+        "version": "0.3.0",
+        "path": "/private/tmp/claude-501/-Users-dustin-Projects-HCB-Companion/87de2116-0bce-4952-8b71-023ab244373b/scratchpad/taste-work/plugins/design-taste-frontend"
+      }
+    ]
+  },
+  "cases": [],
+  "aggregates": {
+    "casesTotal": 0,
+    "casesPassed": 0,
+    "overallScore": 0,
+    "overallPassRate": 0
+  }
+}

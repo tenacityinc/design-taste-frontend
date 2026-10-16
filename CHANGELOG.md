@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.1
+
+- Eval suite is cheaper and clearer: one run per case, and each positive case replaces the bundled `house-rules` grader with single-rule graders so a failure names the rule.
+
 ## 0.3.0
 
 - Moved to the upstream tasteskill v2 core `SKILL.md` plus nine `references/` files loaded on demand (copied from Leonxlnx/taste-skill at commit f624f37, MIT). Upstream scripts, library and assets are not shipped; the skill text was edited to use manual checks instead.
