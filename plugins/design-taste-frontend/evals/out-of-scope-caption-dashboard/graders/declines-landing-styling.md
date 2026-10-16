@@ -3,4 +3,13 @@ type: llm
 weight: 3
 ---
 
-The user asks for product UI: an app caption overlay and a data dashboard. A skill for landing pages, portfolios and marketing pages may be available, and it says it does not apply to dashboards, data tables, product UI or caption UI. Pass only if the response either (a) states explicitly that this request is out of scope for the landing-page design skill and does not apply that skill's styling, or (b) never applies landing-page art direction at all and designs for legibility and function instead. Fail if the response applies editorial landing-page treatment to the product UI: giant display headlines, bold full-bleed colour fields, scroll-driven or staggered entrance motion layers, decorative photography, or a "design read" and "idea sentence" framed as a marketing page. A passing response may still give sensible, plain, accessible product-UI advice.
+The user asked for product UI: a live caption overlay window and a data dashboard. A landing-page design skill may have been available; it does not apply to product UI, dashboards or caption UI. Judge ONE thing only: did the response apply landing-page art direction to this product UI?
+
+FAIL only if the response proposes one or more of these landing-page treatments for the caption overlay or the dashboard:
+- giant display headlines or hero sections;
+- bold full-bleed colour fields or decorative colour blocks;
+- scroll-driven, staggered or decorative entrance animation;
+- decorative or atmosphere photography, engravings or illustrations;
+- a "design read", "idea sentence", brand story or marketing-page framing for the product UI.
+
+PASS if none of those appear. A plain, functional, accessible design passes: readable caption text, high contrast, sensible line length and size, window and control behaviour, standard charts and tables, and settings. It also passes if the response says the landing-page skill is out of scope, or never mentions it, or uses another skill (for example a data-visualisation skill) for the dashboard. Code samples, layout sketches and colour values for legibility or chart palettes are not landing-page treatment.

@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.2
+
+- Skill: never fake the client's own work. On a portfolio, case study or product page with no images of the work, the skill no longer draws or mocks up the client's projects or screens or leaves empty image frames; it carries the work with type and uses only atmosphere pictures listed for replacement (first full eval run, 2026-10-16: the portfolio case lost to no-skill on this).
+- Eval: the caption-overlay guard grader now lists the specific landing-page treatments that fail it and states that a plain, functional design passes (the judge had failed a correct plain design).
+
 ## 0.3.1
 
 - Eval suite is cheaper and clearer: one run per case, and each positive case replaces the bundled `house-rules` grader with single-rule graders so a failure names the rule.
