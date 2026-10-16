@@ -201,11 +201,18 @@ not finished. Order of work:
       sea house), never as a stand-in for the subject;
    6. type and colour alone.
 
+   **Never fake the client's own work.** On a portfolio, case study or product page where the
+   real work has no images yet, do not draw, mock up or invent the client's projects, screens or
+   products, and do not leave empty image frames or "slot for later" boxes. Carry the work with type
+   (a typographic project index, name-led rows, the real numbers and outcomes) and use only
+   atmosphere pictures that are clearly about the world around the work, listed in the report for
+   replacement. Rung 4 is for the subject's world, never for the client's own output.
+
    **The floor:** at least four real pictures on the page, usually six to
    twelve (photographs, archival images, maps, engravings, footage, raster artwork; for software, its
    cropped interface fragments count too). SVG drawings do not count toward the floor: draw what no
    picture exists of, and still carry real pictures. Add one moving picture wherever an honest clip
-   exists: find it the same way and use it as a muted loop with a poster frame. Models skip pictures and footage because finding them is work; the page fails without them.
+   exists: find it the same way and use it as a muted loop with a poster frame. Models skip pictures and footage because finding them is work; the page fails without them. When the client's own work has no images, meet the floor with atmosphere pictures only, never with stand-ins for the work.
 
    `references/imagery.md` covers searching, licences and credits, video, drawing, crops and treatments.
 5. **The live thing** from step 4, built into the section where it proves the claim (often the hero

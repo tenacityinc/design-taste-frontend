@@ -5,14 +5,14 @@
   },
   "metadata": {
     "description": "Anti-slop frontend design for landing pages, portfolios, and redesigns.",
-    "version": "0.3.1"
+    "version": "0.3.2"
   },
   "plugins": [
     {
       "name": "design-taste-frontend",
       "source": "./plugins/design-taste-frontend",
       "description": "Anti-slop frontend design skill for landing pages, portfolios, and redesigns.",
-      "version": "0.3.1"
+      "version": "0.3.2"
     }
   ]
 }
