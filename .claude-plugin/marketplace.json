@@ -3,6 +3,9 @@
   "owner": {
     "name": "Tenacity Inc"
   },
+  "metadata": {
+    "description": "Tenacity design-taste plugin: an anti-slop frontend skill for landing pages, portfolios and redesigns (based on Leonxlnx/taste-skill, MIT)."
+  },
   "plugins": [
     {
       "name": "design-taste-frontend",
