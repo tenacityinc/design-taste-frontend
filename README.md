@@ -37,7 +37,7 @@ Do not use this for dashboards, data tables, or Electron product UI (including H
 
 ## What's inside
 
-- `plugins/design-taste-frontend/skills/design-taste-frontend/SKILL.md` -- the full skill: brief inference, contextual design-system rules, audit-first redesign flow, and a pre-flight check.
+- `plugins/design-taste-frontend/skills/design-taste-frontend/SKILL.md` -- the core skill (upstream tasteskill v2, with our scope guard): the run, the house rules and the laws of the craft. It loads `references/*.md` (copy, type, colour, layout, imagery, motion, critique, tells, research) on demand.
 - `.cursor/commands/design-taste.md` and `plugins/design-taste-frontend/commands/design-taste.md` -- the `/design-taste` slash command (same command, two discovery paths: this repo vs plugin install).
 - `.cursor-plugin/marketplace.json` -- Cursor marketplace manifest for Customize -> Project install.
 - `.claude-plugin/marketplace.json` -- Claude Code marketplace manifest.

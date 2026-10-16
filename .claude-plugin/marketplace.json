@@ -8,7 +8,7 @@
       "name": "design-taste-frontend",
       "source": "./plugins/design-taste-frontend",
       "description": "Anti-slop frontend design skill for landing pages, portfolios, and redesigns.",
-      "version": "0.2.0"
+      "version": "0.3.0"
     }
   ]
 }
