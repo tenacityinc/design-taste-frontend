@@ -53,6 +53,18 @@ Bump `version` in:
 
 Then push to `main`. Claude Code consumers run `/plugin update design-taste-frontend@design-taste-frontend` (or `/reload-plugins`). Cursor consumers reload the window after the plugin updates.
 
+## Evals
+
+Five cases live in `plugins/design-taste-frontend/evals/` (the default eval directory for `claude plugin eval`). Four are positive design cases ported from upstream (`saas-invoicing`, `restaurant-osteria`, `portfolio-designer`, `product-ceramics`), each graded by an LLM on the house rules and on whether the idea comes from the subject. One is a negative case (`out-of-scope-caption-dashboard`): an HCB Desktop caption overlay plus a data dashboard, where the skill must decline to apply landing-page styling. Cases use only Read, Glob, Grep and Skill; there are no scaffold scripts, MCP servers or Bash.
+
+Running them calls the model on your account and costs money, so set a ceiling:
+
+```
+claude plugin eval plugins/design-taste-frontend --max-cost-usd 2
+```
+
+Add `--runs 1` for a cheaper smoke run, or `--case 'out-of-scope*'` to run one case.
+
 ## Credits
 
 Based on [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) (MIT, copyright (c) 2026 Leonxlnx). Modified by Tenacity. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for the full license text and the commit this was copied from.
