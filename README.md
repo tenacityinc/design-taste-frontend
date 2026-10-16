@@ -37,7 +37,7 @@ Do not use this for dashboards, data tables, or Electron product UI (including H
 
 ## What's inside
 
-- `plugins/design-taste-frontend/skills/design-taste-frontend/SKILL.md` -- the full skill: brief inference, contextual design-system rules, audit-first redesign flow, and a pre-flight check.
+- `plugins/design-taste-frontend/skills/design-taste-frontend/SKILL.md` -- the core skill (upstream tasteskill v2, with our scope guard): the run, the house rules and the laws of the craft. It loads `references/*.md` (copy, type, colour, layout, imagery, motion, critique, tells, research) on demand.
 - `.cursor/commands/design-taste.md` and `plugins/design-taste-frontend/commands/design-taste.md` -- the `/design-taste` slash command (same command, two discovery paths: this repo vs plugin install).
 - `.cursor-plugin/marketplace.json` -- Cursor marketplace manifest for Customize -> Project install.
 - `.claude-plugin/marketplace.json` -- Claude Code marketplace manifest.
@@ -52,3 +52,19 @@ Bump `version` in:
 - `plugins/design-taste-frontend/.cursor-plugin/plugin.json`
 
 Then push to `main`. Claude Code consumers run `/plugin update design-taste-frontend@design-taste-frontend` (or `/reload-plugins`). Cursor consumers reload the window after the plugin updates.
+
+## Evals
+
+Five cases live in `plugins/design-taste-frontend/evals/` (the default eval directory for `claude plugin eval`). Four are positive design cases ported from upstream (`saas-invoicing`, `restaurant-osteria`, `portfolio-designer`, `product-ceramics`), each graded by an LLM on the house rules and on whether the idea comes from the subject. One is a negative case (`out-of-scope-caption-dashboard`): an HCB Desktop caption overlay plus a data dashboard, where the skill must decline to apply landing-page styling. Cases use only Read, Glob, Grep and Skill; there are no scaffold scripts, MCP servers or Bash.
+
+Running them calls the model on your account and costs money, so set a ceiling:
+
+```
+claude plugin eval plugins/design-taste-frontend --max-cost-usd 2
+```
+
+Add `--runs 1` for a cheaper smoke run, or `--case 'out-of-scope*'` to run one case.
+
+## Credits
+
+Based on [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) (MIT, copyright (c) 2026 Leonxlnx). Modified by Tenacity. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for the full license text and the commit this was copied from.
